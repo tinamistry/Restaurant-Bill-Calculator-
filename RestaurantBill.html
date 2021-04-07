@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RestaurantBillCalculator</title>
+    <script type="text/javascript" src="bill.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h1>Restaurant Bill Calculator</h1>
+<form id="inputs">
+    <label for="Tax">Tax Percent</label>
+    <input type= "number" id="tax"
+           min="0" max="100" step=".01" > %
+    <br>
+    <br>
+    <label for="price">Price from the menu: </label>
+    <input type="number" id="price"
+           min="0" max=1000" step=".01">
+    <br><br>
+    <label for="tip">Tip Percent:</label>
+    <input type="number" id="tip"
+           min="0" max="200" step="1"> %
+    <br>
+    <br>
+</form>
+<input type="button"
+       form="inputs"
+       value="Calculate Bill"
+       onclick="calculate(this.form);">
+<br>
+<br>
+<output id="totals" form="inputs"></output>
+</body>
+</html>

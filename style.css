@@ -1,0 +1,6 @@
+input:valid:focus{
+    background-color: PaleGreen;
+}
+input:invalid:focus{
+    background-color: LightPink;
+}
